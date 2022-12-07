@@ -1,0 +1,54 @@
+.hero-section {
+  background-color: #fdf2e9;
+  padding: $lg-size 0 $xxxl-size 0;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 $md-size;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $xxxxl-size;
+    align-items: center;
+    &-description {
+      font-size: $font-size-md;
+      line-height: 1.6;
+      margin-bottom: $lg-size;
+    }
+    .courses-sources {
+      display: flex;
+      align-items: center;
+      gap: $normal-size;
+      margin-top: $lg-size;
+      &-imgs {
+        display: flex;
+      }
+      &-imgs img {
+        height: 4.8rem;
+        width: 4.8rem;
+        border-radius: 50%;
+        margin-right: -$normal-size;
+        border: 3px solid #fdf2e9;
+      }
+      &-imgs img:last-child {
+        margin: 0;
+      }
+      .sources-text {
+        font-size: $font-size-base;
+        font-weight: 600;
+        color: $primary-font-color;
+        span {
+          color: $secondary-font-color;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    .hero-img {
+      margin-top: $md-size;
+      width: 100%;
+      filter: grayscale(50%);
+    }
+  }
+

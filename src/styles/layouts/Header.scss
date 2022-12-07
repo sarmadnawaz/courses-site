@@ -1,0 +1,58 @@
+.header {
+  background-color: $primary-color-old-lace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 $lg-size;
+  position: relative;
+  color: $primary-font-color;
+
+  .logo-container h1 {
+    margin: 0;
+    font-size: $font-size-3xl;
+    font-family: serif;
+    font-weight: 900;
+    color: $secondary-font-color;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &-nav {
+    &-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: $lg-size;
+    }
+    & li {
+      display: flex;
+      align-items: center;
+      gap: $xxsm-size;
+    }
+    &-link:link,
+    &-link:visited {
+      color: #333;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: $font-size-base;
+      transition: all 0.3s;
+    }
+    .nav-cta {
+      font-size: $font-size-normal;
+      color: white;
+    }
+    &-link:hover,
+    &-link:active {
+      color: $secondary-font-color;
+    }
+    &-link.nav-cta:hover,
+    &-link.nac-cta:active {
+      color: #333;
+    }
+  }
+}
