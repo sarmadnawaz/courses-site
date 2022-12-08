@@ -1,15 +1,6 @@
 .categories-section {
-  padding: $md-size 0 $md-size 0;
-  &-header {
-    font-size: $font-size-md;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: $md-size;
-    color: $primary-font-color;
-  }
-  .logos {
+  padding: $md-size 0;
+  .categories-section-main {
     display: grid;
     grid-template-columns: repeat(25, 1fr);
     grid-template-rows: repeat(5, 1fr);

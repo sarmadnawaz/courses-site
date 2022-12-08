@@ -1,12 +1,9 @@
 .hero-section {
-  background-color: #fdf2e9;
-  padding: $lg-size 0 $xxxl-size 0;
+  background-color: $primary-color-old-lace;
+  min-height: 80vh;
 }
 
 .hero {
-    max-width: 130rem;
-    margin: 0 auto;
-    padding: 0 $md-size;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: $xxxxl-size;

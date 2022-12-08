@@ -1,0 +1,17 @@
+.pricing-section {
+  padding: $md-size 0;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: $xl-size;
+  }
+  .pricing-section-header {
+    text-align: center;
+  }
+  .pricing-section-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: $lg-size;
+  }
+}

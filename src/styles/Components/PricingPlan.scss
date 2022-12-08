@@ -1,0 +1,89 @@
+.pricing-plan {
+  width: 100%;
+  min-height: 59.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: $lg-size $sm-size;
+  border-radius: $xsm-size;
+  color: $primary-font-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $lg-size;
+  &-header {
+    height: 16rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-name {
+    margin: 0;
+    font-size: $font-size-md;
+    color: $secondary-font-color;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    font-weight: 600;
+  }
+  &-price {
+    margin: 0;
+    font-size: $font-size-xl;
+    font-weight: 500;
+    & span {
+      font-weight: 600;
+      font-size: $font-size-5xl;
+      margin-left: $sm-size;
+    }
+  }
+  &-text {
+    margin: 0;
+    font-size: $font-size-normal;
+    line-height: 1.6;
+    color: $primary-font-color-fade;
+  }
+  &-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: $base-size;
+    padding: 0;
+    margin: 0;
+  }
+  &-feature {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: $sm-size;
+    div {
+      height: 2.8rem;
+    }
+    p {
+      font-size: $font-size-base;
+      margin: 0;
+    }
+  }
+  &-signup {
+    margin-top: auto;
+  }
+}
+
+.pricing-plan-free,
+.pricing-plan-standard {
+  border: 3px solid $primary-color-old-lace;
+}
+.pricing-plan-premium {
+  background-color: $primary-color-old-lace;
+  position: relative;
+}
+.pricing-plan-premium::after {
+  content: "Best Plan";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}

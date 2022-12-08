@@ -1,0 +1,44 @@
+.subscription-section {
+  padding: $md-size 0;
+  .subscription-container {
+    padding: $lg-size;
+    border-radius: $xsm-size;
+    width: 100%;
+    background-color: $secondary-font-color;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    &-content {
+      &-text {
+        font-size: $font-size-base;
+        font-weight: 400;
+        max-width: 65rem;
+      }
+    }
+    &-imgs {
+      padding: $base-size;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: $base-size;
+      row-gap: $base-size;
+    }
+  }
+  .subscription-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: $lg-size;
+    row-gap: $normal-size;
+    input, select{
+      max-width: 30rem;
+    }
+    button {
+      max-width: 30rem;
+      align-self: end;
+      &:hover {
+        background-color: white;
+      }
+    }
+    
+  }
+}

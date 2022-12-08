@@ -1,0 +1,28 @@
+.footer {
+  border-top: 1px solid lightgray;
+  padding: $md-size 0;
+  margin-top: $xl-size;
+  &-contact {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    span {
+        font-weight: 400;
+    }
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size-sm;
+  }
+  &-nav-link {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: $sm-size;
+    color: $secondary-font-color;
+    li {
+      list-style: none;
+    }
+  }
+}

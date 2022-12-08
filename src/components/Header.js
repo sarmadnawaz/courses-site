@@ -26,8 +26,8 @@ const Header = () => {
             <SmChevronDownIcon />
           </li>
           <li>
-            <a className="header-nav-link" href="#">
-              About
+            <a className="header-nav-link" href="#pricing-section">
+              Pricing
             </a>
           </li>
           <li>
