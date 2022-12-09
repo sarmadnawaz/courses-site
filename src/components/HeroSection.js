@@ -17,7 +17,7 @@ function HeroSection() {
               a developer so get started with your prespective courses and enjoy
               awesome learning experience free of cost
             </p>
-            <a href="#" className="btn">
+            <a href="#subscription-section" className="btn">
               Get free Trial
             </a>
             <div className="courses-sources">

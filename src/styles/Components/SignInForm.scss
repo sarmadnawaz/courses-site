@@ -1,0 +1,29 @@
+.sign-in-form-container {
+  padding: $xl-size;
+  border: 3px solid $primary-color-old-lace;
+  border-radius: $md-size;
+  background-color: #fff;
+  .sign-in-form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $md-size;
+    h2 {
+      color: $secondary-font-color;
+    }
+    h3 {
+      text-transform: lowercase;
+    }
+  }
+  .sign-in-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: $md-size;
+    button {
+      align-self: center;
+      margin-top: $md-size;
+    }
+  }
+}

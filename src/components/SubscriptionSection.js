@@ -5,7 +5,7 @@ import { plans } from "../assests/dev-data/pricing-plans";
 
 function SubscriptionSection() {
   return (
-    <div className="subscription-section">
+    <div className="subscription-section" id="subscription-section">
       <div className="container">
         <div className="subscription-container">
           <div className="subscription-container-content">
@@ -21,7 +21,7 @@ function SubscriptionSection() {
               <Input type="text" label="Email" />
               <Input type="text" label="Password" />
               <Input type="text" label="Confirm Password" />
-              <Select label="Plans" option={plans} />
+              <Select label="Plans" options={plans} />
               <button className="btn">Sign Up Now</button>
             </form>
           </div>

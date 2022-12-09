@@ -42,17 +42,9 @@
       font-size: $font-size-base;
       transition: all 0.3s;
     }
-    .nav-cta {
-      font-size: $font-size-normal;
-      color: white;
-    }
     &-link:hover,
     &-link:active {
       color: $secondary-font-color;
-    }
-    &-link.nav-cta:hover,
-    &-link.nac-cta:active {
-      color: #333;
     }
   }
 }

@@ -1,5 +1,5 @@
 import { MdCheckIcon } from "../assests/Icons";
-function PricingPlane({ planType = "free", features = [], price=0 }) {
+function PricingPlane({ planType = "free", features = [], price = 0 }) {
   return (
     <div className={`pricing-plan pricing-plan-${planType.toLowerCase()}`}>
       <header className="pricing-plan-header">
@@ -22,7 +22,9 @@ function PricingPlane({ planType = "free", features = [], price=0 }) {
         })}
       </ul>
       <div className="pricing-plan-signup">
-        <a className="btn">Get Started</a>
+        <a href="#subscription-section" className="btn">
+          Get Started
+        </a>
       </div>
     </div>
   );

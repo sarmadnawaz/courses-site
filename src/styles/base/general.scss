@@ -25,7 +25,7 @@
   text-transform: uppercase;
   letter-spacing: 0.75px;
   font-weight: 500;
-  text-align: center;
+  // text-align: center;
   margin-bottom: $md-size;
   color: $primary-font-color;
 }
@@ -52,6 +52,20 @@
 .btn:active {
   background-color: $secondary-font-color;
   color: #333;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: $primary-color-old-lace;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fff;
+  /* border: 3px solid #fff; */
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px $secondary-font-color;
 }
 
 //******* GENERAL ***********//

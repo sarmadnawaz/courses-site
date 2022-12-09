@@ -16,23 +16,23 @@ const Header = () => {
           </li>
           <li>
             <a className="header-nav-link" href="#">
-              Sources
-            </a>
-          </li>
-          <li>
-            <a className="header-nav-link" href="#">
               Books
             </a>
             <SmChevronDownIcon />
           </li>
           <li>
-            <a className="header-nav-link" href="#pricing-section">
-              Pricing
+            <a className="header-nav-link" href="#">
+            Pricing
             </a>
           </li>
           <li>
-            <a className="btn header-nav-link nav-cta" href="#">
-              Get Started
+            <a className="header-nav-link" href="#pricing-section">
+              Sign in
+            </a>
+          </li>
+          <li>
+            <a className="btn" href="#pricing-section">
+              View Plans
             </a>
           </li>
         </ul>

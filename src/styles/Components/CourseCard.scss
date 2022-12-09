@@ -1,0 +1,79 @@
+.course-card-container {
+  box-sizing: border-box;
+  display: flex;
+  width: fit-content;
+  gap: $normal-size;
+  padding: $xsm-size;
+  // background-color: $primary-color-old-lace;
+  border-radius: $sm-size;
+  border: 2px solid $primary-color-old-lace;
+  cursor: pointer;
+  position: relative;
+  .course-card-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: $normal-size;
+    p,
+    h2 {
+      margin: 0;
+      max-width: 60rem;
+      overflow: hidden;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    h2 {
+      line-height: 1.5;
+      -webkit-line-clamp: 2;
+    }
+
+    .course-card-info {
+      margin-top: auto;
+      display: flex;
+      gap: $lg-size;
+
+      div {
+        box-sizing: border-box;
+        height: 2.4rem;
+        display: flex;
+        align-items: center;
+        gap: $xsm-size;
+
+        p {
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+  // &:hover {
+  //   background-color: #fff;
+  //   box-shadow: inset 0 0 3px $primary-color-old-lace;
+  // }
+  .course-card-actions-btns {
+    position: absolute;
+    top: $xxsm-size;
+    right: $xxsm-size;
+  }
+  .course-card-status {
+    select {
+      width: 5rem;
+      height: 2.4rem;
+      padding: $xxxsm-size;
+      font-size: $normal-size;
+      appearance: none;
+    }
+  }
+}
+.todo-container {
+  background-color: hsla(145, 63%, 49%, 0.6);
+}
+.doing-container {
+  background-color: hsla(187, 76%, 53%, 0.6);
+}
+.done-container {
+  background-color: hsla(24, 100%, 41%, 0.6);
+}

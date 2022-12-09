@@ -1,0 +1,12 @@
+.sign-in-page {
+  background-color: $primary-color-old-lace;
+  &-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-in-form-container {
+    min-width: 45rem;
+  }
+}
