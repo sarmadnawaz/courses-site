@@ -8,11 +8,11 @@ import { DashBoard } from "../components/Dashboard";
 export const Home = () => {
   return (
     <main>
-      <DashBoard />
+      {/* <DashBoard /> */}
       {/* <HeroSection />
       <CategoriesSection />
       <PricingSection />
-      <SubscriptionSection />*/}
+      <SubscriptionSection /> */}
       {/* <Footer />  */}
     </main>
   );
