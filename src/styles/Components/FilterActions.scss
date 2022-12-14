@@ -1,0 +1,16 @@
+.filter-container {
+  margin: $sm-size;
+  h3 {
+    padding: $sm-size;
+    margin: 0;
+    text-align: center;
+  }
+}
+.filter-actions {
+  box-sizing: border-box;
+  padding: $sm-size;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: $sm-size;
+}

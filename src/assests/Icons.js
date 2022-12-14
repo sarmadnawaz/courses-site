@@ -6,7 +6,11 @@ import {
   BookOpenIcon,
   PlusIcon,
   XMarkIcon,
+  MagnifyingGlassIcon,
+  ChevronRightIcon,
+  ChevronLeftIcon
 } from "@heroicons/react/24/outline";
+
 
 //! SMAL ICONS
 export const SmChevronDownIcon = ({ style = {}, className = "", ...props }) => (
@@ -21,7 +25,7 @@ export const MdCheckIcon = ({ style = {}, className = "", ...props }) => (
 );
 
 export const MdClockIcon = ({ style = {}, className = "", ...props }) => (
-  <ClockIcon style={{ width: "24px", height: "24px", ...style }} {...props} />
+  <ClockIcon className={className} style={{ width: "24px", height: "24px", ...style }} {...props} />
 );
 
 export const MdFilmIcon = ({ style = {}, className = "", ...props }) => (
@@ -36,9 +40,21 @@ export const MdBookOpenIcon = ({ style = {}, className = "", ...props }) => (
 );
 
 export const ExMdPlusIcon = ({ style = {}, className = "", ...props }) => (
-  <PlusIcon style={{ width: "32px", height: "32px", ...style }} {...props} />
+  <PlusIcon className={className} style={{ width: "32px", height: "32px", ...style }} {...props} />
 );
 
 export const ExMdCrossIcon = ({ style = {}, className = "", ...props }) => (
   <XMarkIcon style={{ width: "32px", height: "32px", ...style }} {...props} />
+);
+
+export const ExMdSearchIcon = ({ style = {}, className = "", ...props }) => (
+  <MagnifyingGlassIcon className={className} style={{ width: "32px", height: "32px", ...style }} {...props} />
+);
+
+export const ExMdChevronRIcon = ({ style = {}, className = "", ...props }) => (
+  <ChevronRightIcon className={className} style={{ width: "32px", height: "32px", ...style }} {...props} />
+);
+
+export const ExMdChevronLIcon = ({ style = {}, className = "", ...props }) => (
+  <ChevronLeftIcon className={className} style={{ width: "32px", height: "32px", ...style }} {...props} />
 );

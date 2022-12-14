@@ -1,0 +1,37 @@
+.dashboard-header {
+  box-sizing: border-box;
+  height: 8.25rem;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  .search-bar-container {
+    margin: 0 auto;
+  }
+  .logo {
+    color: $tertiary-font-color;
+    text-align: center;
+    @media screen and (max-width: 700px) {
+      text-align: start;
+    }
+    padding: $normal-size;
+    h1 {
+      font-family: "Pacifico", cursive;
+      font-size: $font-size-3xl;
+      font-weight: 500;
+      line-height: 1.15;
+      margin: 0;
+    }
+  }
+  .signout-btn-container {
+    box-sizing: border-box;
+    position: absolute;
+    height: 8.25rem;
+    padding-right: $normal-size;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+}

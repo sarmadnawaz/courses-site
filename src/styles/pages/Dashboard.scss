@@ -1,0 +1,32 @@
+.dashboard-page {
+  &-main {
+    margin-top: $xxxsm-size;
+    .top-nav {
+      height: 3.3rem;
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 3.5rem;
+      font-size: $font-size-md;
+      margin: 0;
+      padding: 0;
+      border-radius: $sm-size;
+      border: 3px solid $tertiary-color;
+
+      li {
+        cursor: pointer;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+      }
+      .active {
+        background-color: $tertiary-color;
+        color: white;
+      }
+    }
+  }
+}
