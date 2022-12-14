@@ -2,16 +2,16 @@ import "./styles/main.scss";
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
 import { SignIn } from "./pages/SignIn";
+import { DashBoard } from "./pages/Dashboard";
 import { UnAuthenticatedHeader } from "./components/UnAuthenticatedHeader";
-import { Discover } from "./pages/Discover";
 
 function App() {
   return (
     <div className="app">
+      <DashBoard />
       {/* <UnAuthenticatedHeader /> */}
-      <Discover />
       {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <SignIn /> */}
     </div>
   );

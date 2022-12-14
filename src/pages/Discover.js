@@ -7,7 +7,7 @@ import { Select } from "../components/Select";
 function Discover() {
   return (
     <div className="discover-page">
-      <div className="discover-categories-section-container">
+      {/* <div className="discover-categories-section-container">
         <section className="discover-categories-section">
           <div className="categories-section-header">
             <h2 className="sub-heading">Categories</h2>
@@ -29,7 +29,7 @@ function Discover() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
       <div className="discover-page-container">
         <div className="discover-page-main">
           <div className="filter-container">

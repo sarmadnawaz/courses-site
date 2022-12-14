@@ -1,0 +1,44 @@
+.pagination-container {
+    width: 100%;
+    max-width: 75rem;
+    .pagination-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .btn, .active {
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: $tertiary-color;
+        .icon {
+          stroke: $primary-color;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:hover {
+          background-color: white;
+          box-shadow: inset 0 0 0 3px $tertiary-color;
+          .icon {
+            stroke: $tertiary-color;
+          }
+        }
+      }
+      .active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $normal-size;
+        font-weight: 700;
+        color: $secondary-font-color;
+        &:hover {
+          color: $tertiary-font-color;
+        }
+      }
+      li {
+        list-style: none;
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+.courses-list-container {
+  // box-sizing: border-box;
+  // overflow: scroll;
+  padding: 0 $md-size;
+  margin: $md-size 0;
+  display: flex;
+  flex-direction: column;
+  gap: $lg-size;
+  height: 100vh;
+  align-items: center;
+  .sub-heading {
+    margin: 0;
+    font-size: $font-size-lg;
+  }
+  .courses-list {
+    padding: 0;
+    margin: 0;
+    // padding: $md-size;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: $xsm-size;
+    row-gap: $xl-size;
+    div {
+      justify-self: center;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.filter-select-container {
+  display: flex;
+  align-items: center;
+  gap: $sm-size;
+  label {
+    font-size: $normal-size;
+    color: $primary-font-color;
+    font-weight: 700;
+  }
+  .filter-select {
+    font-family: "Nunito", sans-serif;
+    border-color: $tertiary-color;
+    font-size: $font-size-normal;
+    font-weight: 900;
+    width: 15rem;
+    padding: $xxsm-size;
+    border-radius: $sm-size;
+    padding-left: $sm-size;
+    &:focus {
+      outline-color: $tertiary-color;
+    }
+  }
+}
