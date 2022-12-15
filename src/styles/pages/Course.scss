@@ -1,0 +1,119 @@
+.course-page {
+  .container {
+    max-width: 160rem;
+    height: calc(100vh - 8.2rem);
+    display: flex;
+    flex-direction: column;
+    margin-top: $xl-size;
+  }
+  .course-heading {
+    font-size: $font-size-xl;
+    font-weight: 600;
+    margin: $sm-size 0;
+    span {
+      color: $tertiary-font-color;
+    }
+  }
+  .course-content {
+    display: flex;
+    gap: $lg-size;
+  }
+  .video-container {
+    max-width: 100rem;
+    max-width: 100rem;
+    .lecture-title {
+      font-size: $font-size-md;
+      font-weight: 600;
+      margin: $sm-size 0;
+    }
+  }
+  .player-box {
+    width: 100rem;
+    box-sizing: border-box;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .lectures-list-container {
+    box-sizing: border-box;
+    color: $primary-font-color;
+    box-sizing: border-box;
+    height: 55rem;
+    width: 35rem;
+    border: 1px solid $tertiary-color;
+    background-color: $tertiary-color;
+    position: relative;
+    &-header {
+      font-size: $font-size-normal;
+      font-weight: 500;
+      background-color: $tertiary-color;
+      padding: $sm-size;
+      // position: absolute;
+      // top : 0%;
+      // left: 0%;
+      margin: 0;
+      text-align: center;
+      color: $primary-color;
+      width: 100%;
+    }
+
+    .lectures-list {
+      box-sizing: border-box;
+      overflow: scroll;
+      height: 50rem;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      li {
+        padding: $xsm-size $sm-size 0 $sm-size;
+        background-color: $primary-color;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: 7rem;
+        list-style: none;
+        transition: all 0.3s;
+        cursor: pointer;
+        .lecture-title-preview {
+          width: 100%;
+          text-overflow: ellipsis;
+          font-size: $font-size-normal;
+          font-weight: 500;
+          margin: 0;
+          overflow: hidden;
+          line-height: 1.3;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .lecture-number {
+          margin: 0;
+          margin-top: auto;
+          font-size: $font-size-sm;
+          font-weight: 500;
+          color: $tertiary-font-color;
+          padding: 0;
+        }
+        &:hover {
+          color: $secondary-font-color;
+          .lecture-number {
+            color: $secondary-font-color;
+          }
+          background-color: $tertiary-color;
+        }
+      }
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 0px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+        border: 1px solid $tertiary-color;
+      }
+    }
+  }
+}
