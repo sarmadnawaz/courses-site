@@ -1,15 +1,34 @@
-import categories from "../assests/dev-data/categories";
+import { useState, useEffect } from "react";
+import { getCategories } from "../services/getCategories";
+
 function CategoriesSection() {
+  const [categories, setCategories] = useState(new Array(150).fill(1));
+  const handleImageLoad = (e) => {
+    e.target
+      .closest(".category-img-container")
+      .children[1].classList.add("hidden");
+    e.target.classList.remove("hidden");
+  };
+  useEffect(() => {
+    // getCategories().then((categories) => setCategories(categories));
+  }, []);
   return (
     <section className="categories-section">
-      <div className="container categories-section-container">
-        <div className="categories-section-header">
+      <div className="container">
         <h2 className="sub-heading">Courses Categories</h2>
-        </div>
         <div className="categories-section-main">
-          {categories.map(({ imageURL, name }) => (
-            <div>
-              <img title={name} src={imageURL} alt={`${name} icon`} />
+          {categories.map(({ title, name }) => (
+            <div className="category-img-container">
+              <div className="img-container">
+                <img
+                  className="hidden"
+                  title={title}
+                  src={`http://127.0.0.1:3000/api/images/${name}?size=80x80`}
+                  alt={`${title} icon`}
+                  onLoad={handleImageLoad}
+                />
+              </div>
+              <div className="img-placeholder"></div>
             </div>
           ))}
         </div>

@@ -1,312 +1,413 @@
-import { DashBoardHeader } from "../components/DashBoardHeader";
+import { AuthenticatedHeader } from "../components/AuthenticatedHeader";
 function Course() {
   return (
     <div className="course-page">
-      <DashBoardHeader />
-      <div className="container">
-        <h2 className="course-heading">
-          <span>Course :</span>&nbsp; Node.js, Express, MongoDB & More: The
-          Complete Bootcamp 2020
+      <AuthenticatedHeader />
+      <div className="course-page-container">
+        <h2 className="heading-secondary">
+          Node.js, Express, MongoDB & More: The Complete Bootcamp 2020
         </h2>
-        <div className="course-content">
-          <div className="video-container">
-            <div className="player-box">
-              <video
-                src="https://vss6.coursehunter.net/s/c708109060e6299fe80d47bebd922714/hl-hlmscru/lesson1.mp4"
-                controls
-              />
-            </div>
-            <div className="video-description">
-              <h3 className="lecture-title">Advance PHP bootcamp 2022</h3>
-            </div>
-          </div>
-          <div className="lectures-list-container">
-            <h3 className="lectures-list-container-header">
-              All Lectures
-            </h3>
-            <ul className="lectures-list">
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-              <li>
-                <p className="lecture-title-preview">
-                  Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance
-                  PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
-                  bootcamp 2022
-                </p>
-                <p className="lecture-number">lecture 1</p>
-              </li>
-            </ul>
-          </div>
+        <div className="vidoe-container">
+          <video
+            className="responsive-iframe"
+            src="https://vss3.coursehunter.net/s/c7426c10edc3f755901e3d4795f02772/udemy-nb2019/lesson135.mp4"
+            controls
+          />
+        </div>
+        <div className="sub-heading lecture-title">
+          Node.js, Express, MongoDB & More: The Complete Bootcamp 2020
+        </div>
+        <div className="lectures-list-container">
+          <h3 className="sub-heading">All Lectures</h3>
+          <ul className="lectures-list">
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+            <li className="lectures-list-lecture">
+              <p className="lecture-number">12</p>
+              <p className="lecture-title-preview">
+                Advance PHP bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP
+                bootcamp 2022 Advance PHP bootcamp 2022 Advance PHP bootcamp
+                2022
+              </p>
+              <p className="lecture-duration">12:09:32</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

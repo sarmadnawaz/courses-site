@@ -8,24 +8,22 @@ import {
 function PricingSection() {
   return (
     <section className="pricing-section" id="pricing-section">
-      <div className="container pricing-section-container">
-        <div className="pricing-section-header">
-          <h2 className="sub-heading">Pricing</h2>
-          <h2 className="heading-secondary">
-            Enjoy awesome learning experience
-          </h2>
-        </div>
+      <div className="container">
+        <h2 className="sub-heading">Pricing</h2>
+        <h2 className="heading-secondary">Enjoy awesome learning experience</h2>
         <div className="pricing-section-main">
-          <PricingPlane features={freePlanFeatures} />
+          <PricingPlane features={freePlanFeatures} duration="15 days" />
           <PricingPlane
             planType="standard"
             features={standardPlanFeatures}
-            price="10"
+            price="5.99"
+            duration="monthly"
           />
           <PricingPlane
             planType="premium"
             features={premiumPlanFeatures}
-            price="15"
+            price="24.99"
+            duration="monthly"
           />
         </div>
       </div>

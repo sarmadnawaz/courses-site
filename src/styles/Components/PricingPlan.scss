@@ -1,15 +1,18 @@
 .pricing-plan {
+  background-color: $medium-gray;
+  color: $slate;
   width: 100%;
+  min-width: 40rem;
   min-height: 59.5rem;
   box-sizing: border-box;
   overflow: hidden;
   padding: $lg-size $sm-size;
   border-radius: $xsm-size;
-  color: $primary-font-color;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: $lg-size;
+
   &-header {
     height: 16rem;
     box-sizing: border-box;
@@ -19,13 +22,13 @@
   }
   &-name {
     margin: 0;
-    font-size: $font-size-md;
-    color: $secondary-font-color;
+    font-size: $font-size-base;
     text-transform: uppercase;
     letter-spacing: 0.75;
-    font-weight: 600;
+    font-weight: 500;
   }
   &-price {
+    color: $off-white;
     margin: 0;
     font-size: $font-size-xl;
     font-weight: 500;
@@ -35,12 +38,13 @@
       margin-left: $sm-size;
     }
   }
-  &-text {
+  &-duration {
+    color: $off-white;
     margin: 0;
     font-size: $font-size-normal;
     line-height: 1.6;
-    color: $primary-font-color-fade;
   }
+
   &-features-list {
     display: flex;
     flex-direction: column;
@@ -61,17 +65,17 @@
       margin: 0;
     }
   }
-  &-signup {
+  .link-signup {
     margin-top: auto;
   }
 }
 
 .pricing-plan-free,
 .pricing-plan-standard {
-  border: 3px solid $primary-color-old-lace;
+  // border: 3px solid $primary-color-old-lace;
 }
 .pricing-plan-premium {
-  background-color: $primary-color-old-lace;
+  // background-color: $primary-color-old-lace;
   position: relative;
 }
 .pricing-plan-premium::after {

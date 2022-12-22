@@ -1,12 +1,16 @@
 .pricing-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: $dark-gray;
+  display: flex;
+  align-items: center;
   padding: $md-size 0;
-  &-container {
+  .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: $xl-size;
-  }
-  .pricing-section-header {
-    text-align: center;
   }
   .pricing-section-main {
     display: grid;

@@ -1,5 +1,6 @@
 .header {
-  background-color: $primary-color-old-lace;
+  background-color: $medium-gray;
+  color: $off-white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,18 +8,16 @@
   height: 9.6rem;
   padding: 0 $lg-size;
   position: relative;
-  color: $primary-font-color;
 
-  .logo-container h1 {
-    margin: 0;
-    font-size: $font-size-3xl;
-    font-family: serif;
-    font-weight: 900;
-    color: $secondary-font-color;
-  }
-
-  a {
+  .logo-container {
     text-decoration: none;
+    h1 {
+      margin: 0;
+      font-size: $font-size-3xl;
+      font-family: serif;
+      font-weight: 900;
+      color: $secondary-font-color;
+    }
   }
 
   &-nav {
@@ -32,19 +31,6 @@
       display: flex;
       align-items: center;
       gap: $xxsm-size;
-    }
-    &-link:link,
-    &-link:visited {
-      color: #333;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: $font-size-base;
-      transition: all 0.3s;
-    }
-    &-link:hover,
-    &-link:active {
-      color: $secondary-font-color;
     }
   }
   .header-user-avatar {
@@ -61,3 +47,16 @@
     }
   }
 }
+
+.header-logo-container {
+  text-decoration: none;
+  .header-logo {
+    font-family: "Pacifico", cursive;
+    font-size: $font-size-3xl;
+    font-family: serif;
+    font-weight: 500;
+    margin: 0;
+    color: $secondary-font-color;
+  }
+}
+  

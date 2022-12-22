@@ -1,18 +1,32 @@
+///////////////////////////////
+///
+///
+///
+
+.para-primary {
+  color: $slate;
+  font-size: $font-size-md;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  color: $primary-font-color;
+  color: $off-white;
   font-family: "Rubik", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.5px;
 }
 
 .heading-primary {
   font-size: $font-size-4xl;
   line-height: 1.05;
-  margin-bottom: 3.2rem;
+  margin: 0;
 }
+
 .heading-secondary {
+  color: $slate;
   margin: 0;
   font-size: $font-size-2xl;
   line-height: 1.05;
@@ -21,52 +35,14 @@
 
 .sub-heading {
   margin: 0;
-  font-size: $font-size-md;
+  color: $off-white;
+  font-size: $font-size-lg;
   text-transform: uppercase;
   letter-spacing: 0.75px;
   font-weight: 500;
-  // text-align: center;
-  margin-bottom: $md-size;
-  color: $primary-font-color;
 }
+
 //************** BUTTON/Link *****************\\
-// .btn,
-// .btn:link,
-// .btn:visited {
-//   padding: $sm-size;
-//   font-size: $font-size-base;
-//   max-height: 4.6rem;
-//   text-decoration: none;
-//   padding: $sm-size $base-size;
-//   border-radius: $xsm-size;
-//   background-color: $secondary-font-color;
-//   font-weight: 500;
-//   color: white;
-//   border: none;
-//   cursor: pointer;
-//   font-family: inherit;
-//   transition: all 0.3s;
-// }
-
-// .btn:hover,
-// .btn:active {
-//   background-color: $secondary-font-color;
-//   color: #333;
-// }
-
-// .btn--outline:link,
-// .btn--outline:visited {
-//   background-color: $primary-color-old-lace;
-//   color: #555;
-// }
-
-// .btn--outline:hover,
-// .btn--outline:active {
-//   background-color: #fff;
-//   /* border: 3px solid #fff; */
-//   /* Trick to add border inside */
-//   box-shadow: inset 0 0 0 3px $secondary-font-color;
-// }
 
 //******* GENERAL ***********//
 .container {
@@ -83,51 +59,100 @@
 .btn:visited {
   text-decoration: none;
   font-family: nunito;
-  background-color: #fff;
+  background-color: $white;
   box-sizing: border-box;
   font-size: $font-size-base;
   font-weight: 700;
   border: none;
-  padding: $xsm-size $sm-size;
+  padding: $sm-size $normal-size;
   border-radius: $xsm-size;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-.btn--outline-white:link,
-.btn--outline-white:visited {
-  background-color: $tertiary-color;
-  color: $secondary-font-color;
-}
-.btn--outline-white:hover,
-.btn--outline-white:active {
-  background-color: $primary-color;
-  color: $tertiary-font-color;
-  box-shadow: inset 0 0 0 3px $tertiary-color;
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: $white;
+  color: #000;
 }
 
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: transparent;
+  color: $off-white;
+  box-shadow: inset 0 0 0 3px $white;
+}
 
+//! Search BAR
 .search-bar-container {
   font-family: nunito;
   position: relative;
+
   input {
+    color: $slate;
+    background-color: $medium-gray;
     font-size: $font-size-lg;
     font-weight: 500;
-    padding: $xsm-size $md-size;
+    padding: $sm-size $md-size;
     border-radius: $lg-size;
     max-width: 45rem;
-    box-shadow: 2px 2px 6px 2px $tertiary-color;
+    // box-shadow: 2px 2px 6px 2px $slate;
     border: none;
+
     &:focus {
       box-shadow: none;
-      outline-color: $tertiary-color;
+      outline-color: $slate;
     }
   }
+
   .search-icon {
     position: absolute;
     top: 50%;
     right: 1.5rem;
     transform: translate(0, -50%);
-    stroke: $tertiary-color;
+    stroke: $slate;
+    cursor: pointer;
   }
+}
+
+//! NAVLINK
+.nav-link,
+.nav-link :link,
+.nav-link :visited {
+  text-decoration: none;
+  color: $slate;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: $font-size-base;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  transform: scale(1.075);
+  color: $off-white;
+}
+
+.nav-link--outline:link,
+.nav-link--outline:visited {
+  padding: $sm-size $normal-size;
+  border-radius: $xsm-size;
+  background-color: $medium-gray;
+  color: $off-white;
+}
+
+.nav-link--outline:hover,
+.nav-link--outline:active {
+  background-color: $dark-gray;
+  color: $slate;
+  box-shadow: inset 0 0 0 3px $white;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
 }

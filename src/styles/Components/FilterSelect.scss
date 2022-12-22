@@ -1,21 +1,26 @@
 .filter-select-container {
   display: flex;
   align-items: center;
-  gap: $sm-size;
+  gap: $normal-size;
+  min-width: 24.2rem;
   label {
     font-size: $normal-size;
-    color: $primary-font-color;
+    color: $slate;
     font-weight: 700;
+    margin: 0;
+    min-width: 7.5rem;
   }
   .filter-select {
+    width: 13.5rem;
     font-family: "Nunito", sans-serif;
-    border-color: $tertiary-color;
-    font-size: $font-size-normal;
-    font-weight: 900;
-    width: 15rem;
+    color: $slate;
     padding: $xxsm-size;
-    border-radius: $sm-size;
-    padding-left: $sm-size;
+    font-size: $normal-size;
+    font-family: inherit;
+    border: none;
+    background-color: $dark-gray;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     &:focus {
       outline-color: $tertiary-color;
     }

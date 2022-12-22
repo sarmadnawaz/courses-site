@@ -1,16 +1,19 @@
 .filter-container {
-  margin: $sm-size;
-  h3 {
-    padding: $sm-size;
-    margin: 0;
+  background-color: $medium-gray;
+  margin: $normal-size;
+  border-radius: $xsm-size;
+  padding: $base-size;
+  transition: all 0.3s;
+  h2 {
     text-align: center;
+    margin-bottom: $base-size;
   }
-}
-.filter-actions {
-  box-sizing: border-box;
-  padding: $sm-size;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  gap: $sm-size;
+  .filter-actions {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24.2rem, 1fr));
+    gap: $sm-size;
+    transition: all 0.3s;
+  }
 }

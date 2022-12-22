@@ -1,23 +1,26 @@
 .label {
+  color: $slate;
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  margin-bottom: $xxsm-size;
+  margin-bottom: $xsm-size;
 }
 
-.input, .select {
+.input,
+.select {
+  color: $slate;
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
   font-family: inherit;
-  color: inherit;
   border: none;
-  background-color: $primary-color-old-lace;
+  background-color: $dark-gray;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.input:focus {
+.input:focus,
+.select:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  box-shadow: 0 0 0 0.8rem $slate;
 }

@@ -12,7 +12,7 @@ function SubscriptionSection() {
             <div className="subscription-form-container-header heading-secondary">
               Get Trial peroid of 15 days for free
             </div>
-            <p className="subscription-container-content-text">
+            <p className="para-primary">
               Sign up now to get free access to 100 courses and 75 books for
               free. You can also subscribe paid plans by now
             </p>
@@ -22,7 +22,7 @@ function SubscriptionSection() {
               <Input type="text" label="Password" />
               <Input type="text" label="Confirm Password" />
               <Select label="Plans" options={plans} />
-              <button className="btn">Sign Up Now</button>
+              <button className="btn btn--outline">Sign Up Now</button>
             </form>
           </div>
           <div className="subscription-container-imgs">

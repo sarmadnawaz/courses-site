@@ -1,1 +1,0 @@
-export default "https://cdn.coursehunter.net/topics/500x500/systemprogramming.png"

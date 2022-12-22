@@ -2,7 +2,7 @@ import { FilterSelect } from "./FilterSelect";
 function FilterActions() {
   return (
     <div className="filter-container">
-      <h3 className="sub-heading">Filter</h3>
+      <h2 className="sub-heading">Filter</h2>
       <div className="filter-actions">
         <FilterSelect
           label="Category"
@@ -29,5 +29,4 @@ function FilterActions() {
   );
 }
 
-
-export { FilterActions }
+export { FilterActions };

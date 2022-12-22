@@ -1,17 +1,26 @@
 .subscription-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $dark-gray;
   padding: $md-size 0;
   .subscription-container {
+    background-color: $medium-gray;
     padding: $lg-size;
     border-radius: $xsm-size;
     width: 100%;
-    background-color: $secondary-font-color;
     display: grid;
     grid-template-columns: 1fr auto;
+    .heading-secondary {
+      color: $off-white;
+    }
     &-content {
-      &-text {
-        font-size: $font-size-base;
-        font-weight: 400;
-        max-width: 65rem;
+      display: flex;
+      flex-direction: column;
+      gap: $base-size;
+      .para-primary {
+        max-width: 75rem;
       }
     }
     &-imgs {
@@ -29,16 +38,13 @@
     grid-template-rows: 1fr 1fr;
     column-gap: $lg-size;
     row-gap: $normal-size;
-    input, select{
+    input,
+    select {
       max-width: 30rem;
     }
     button {
       max-width: 30rem;
       align-self: end;
-      &:hover {
-        background-color: white;
-      }
     }
-    
   }
 }

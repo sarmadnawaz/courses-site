@@ -9,29 +9,29 @@ const Header = () => {
       <nav className="header-nav">
         <ul className="header-nav-list">
           <li>
-            <a className="header-nav-link" href="#">
+            <a className="nav-link" href="#">
               Courses
             </a>
             <SmChevronDownIcon />
           </li>
           <li>
-            <a className="header-nav-link" href="#">
+            <a className="nav-link" href="#">
               Books
             </a>
             <SmChevronDownIcon />
           </li>
           <li>
-            <a className="header-nav-link" href="#">
-            Pricing
+            <a className="nav-link" href="#">
+              Pricing
             </a>
           </li>
           <li>
-            <a className="header-nav-link" href="#pricing-section">
+            <a className="nav-link" href="#pricing-section">
               Sign in
             </a>
           </li>
           <li>
-            <a className="btn" href="#pricing-section">
+            <a className="btn btn--outline" href="#pricing-section">
               View Plans
             </a>
           </li>

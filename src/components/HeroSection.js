@@ -1,39 +1,39 @@
-import images from "../assests/dev-data/sources-imgs";
-import heroSectionImage from "../assests/dev-data/bg-img";
+import { heroSection } from "../assests/content/sections-data";
 
 function HeroSection() {
+  const {
+    heading,
+    paragraph,
+    instructorNumbers,
+    instructorsText,
+    instructorsImages,
+    mainImage,
+  } = heroSection;
   return (
     <section className="hero-section">
       <div className="container">
-        <div className="hero">
-          <div className="hero-text-box">
-            <h1 className="heading-primary">
-              Future proof your career with computer science and IT
-            </h1>
-            <p className="hero-description">
-              Welcome to our website. We have a vast collection of lastest and
-              up to date free courses and books for learning programming and
-              related technology. This is the best platform to choose to become
-              a developer so get started with your prespective courses and enjoy
-              awesome learning experience free of cost
-            </p>
-            <a href="#subscription-section" className="btn">
-              Get free Trial
-            </a>
-            <div className="courses-sources">
-              <div className="courses-sources-imgs">
-                {images.map((img) => (
-                  <img src={img} />
-                ))}
-              </div>
-              <p className="sources-text">
-                <span>150+</span> experienced courses instructors
-              </p>
+        <div className="hero-text-box">
+          <h1 className="heading-primary">{heading}</h1>
+          <p className="para-primary">{paragraph}</p>
+          <a
+            href="#subscription-section"
+            className="nav-link nav-link--outline"
+          >
+            Get free Trial
+          </a>
+          <div className="courses-sources">
+            <div className="courses-sources-imgs">
+              {instructorsImages.map((img) => (
+                <img src={img} />
+              ))}
             </div>
+            <p className="sources-text">
+              <span>{instructorNumbers}+</span> {instructorsText}
+            </p>
           </div>
-          <div className="hero-img-box">
-            <img className="hero-img" src={heroSectionImage} />
-          </div>
+        </div>
+        <div className="hero-img-box">
+          <img className="hero-img" src={mainImage} />
         </div>
       </div>
     </section>

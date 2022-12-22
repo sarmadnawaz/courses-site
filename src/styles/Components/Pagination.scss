@@ -1,44 +1,46 @@
 .pagination-container {
-    width: 100%;
-    max-width: 75rem;
-    .pagination-list {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      .btn, .active {
-        position: relative;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
-        background-color: $tertiary-color;
+  width: 100%;
+  max-width: 75rem;
+  .pagination-list {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .btn,
+    .active {
+      position: relative;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      background-color: $white;
+      .icon {
+        stroke: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        background-color: transparent;
+        box-shadow: inset 0 0 0 3px $white;
         .icon {
-          stroke: $primary-color;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          stroke: $white;
         }
-        &:hover {
-          background-color: white;
-          box-shadow: inset 0 0 0 3px $tertiary-color;
-          .icon {
-            stroke: $tertiary-color;
-          }
-        }
-      }
-      .active {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: $normal-size;
-        font-weight: 700;
-        color: $secondary-font-color;
-        &:hover {
-          color: $tertiary-font-color;
-        }
-      }
-      li {
-        list-style: none;
       }
     }
+    .active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $normal-size;
+      font-weight: 700;
+      color: #000;
+      &:hover {
+        color: $off-white;
+      }
+    }
+    li {
+      list-style: none;
+    }
   }
+}

@@ -5,9 +5,14 @@ import {
   ExMdPlusIcon,
   ExMdCrossIcon,
 } from "../assests/Icons";
-import { courseData } from "../assests/dev-data/courses";
-function CourseCard() {
-  const { title, duration, source, description, lectures, img } = courseData;
+function CourseCard({ courseData }) {
+  const {
+    title,
+    duration,
+    sourceName: source,
+    lectures = 364,
+    coverImage: img,
+  } = courseData;
   return (
     <div className={`course-card-container`}>
       <div className="img-wrapper">

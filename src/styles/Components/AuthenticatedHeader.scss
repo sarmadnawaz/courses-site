@@ -1,0 +1,23 @@
+.authenticated-header {
+  width: 100vw;
+  padding: 0 $md-size;
+  background-color: $dark-gray;
+  box-sizing: border-box;
+  height: 8.25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .header-link-container {
+    margin-left: auto;
+  }
+  .header-logo-container {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-logo-container,
+  .header-link-container {
+    display: none;
+  }
+}
