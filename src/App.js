@@ -6,15 +6,18 @@ import { Explore } from "./pages/Explore";
 import { Course } from "./pages/Course";
 import { UnAuthenticatedHeader } from "./components/UnAuthenticatedHeader";
 import { getCategories } from "./services/getCategories";
+import { CoursesProvider } from "./contexts/CoursesContext";
 
 function App() {
   return (
     <div className="app">
+      <CoursesProvider>
+      <Explore />
+      </CoursesProvider>
       {/* <Course /> */}
-      {/* <Explore /> */}
       {/* <UnAuthenticatedHeader /> */}
       {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <SignIn /> */}
     </div>
   );
