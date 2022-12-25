@@ -1,19 +1,41 @@
+import { useEffect, useState } from "react";
 import { ExMdChevronRIcon, ExMdChevronLIcon } from "../assests/Icons";
-function Pagination() {
+import renderPageNumbers from "../utilz/renderPageNumbers";
+
+function Pagination({
+  totalPages = 1,
+  currentPage: activePage = 1,
+  onPageChangehandler = () => {},
+}) {
+  const [currentPage, setCurrentPage] = useState(activePage);
+
+  const handlePageChange = (pageNumber) => {
+    if (pageNumber > totalPages) {
+      setCurrentPage(1);
+    } else if (pageNumber <= 1) {
+      setCurrentPage(totalPages);
+    } else setCurrentPage(pageNumber);
+  };
+
+  useEffect(() => {
+    onPageChangehandler(currentPage);
+  }, [currentPage]);
+
   return (
     <div className="pagination-container">
       <ul className="pagination-list">
         <li className="btn">
-          <ExMdChevronLIcon className="icon" />
+          <ExMdChevronLIcon
+            onClick={() => handlePageChange(currentPage - 1)}
+            className="icon"
+          />
         </li>
-        <li>1</li>
-        <li className="active">2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
+        {renderPageNumbers(currentPage, totalPages, handlePageChange)}
         <li className="btn">
-          <ExMdChevronRIcon className="icon" />
+          <ExMdChevronRIcon
+            onClick={() => handlePageChange(currentPage + 1)}
+            className="icon"
+          />
         </li>
       </ul>
     </div>

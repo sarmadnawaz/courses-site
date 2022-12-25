@@ -19,7 +19,6 @@ export const CoursesProvider = (props) => {
     language: null,
     page: 2,
   });
-  console.log(queries);
   const value = {
     totalCourses,
     courses,

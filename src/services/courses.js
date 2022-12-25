@@ -9,6 +9,7 @@ export const getCourses = async (queries) => {
     const coursesUrl = `http://127.0.0.1:3000/api/courses?${queriesArr.join(
       "&"
     )}`;
+    console.log(coursesUrl);
     const response = await fetch(coursesUrl);
     const { data } = await response.json();
     return {
