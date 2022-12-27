@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getCategories } from "../services/getCategories";
+import { getCategories } from "../services/categories";
 
 function CategoriesSection() {
   const [categories, setCategories] = useState(new Array(150).fill(1));
