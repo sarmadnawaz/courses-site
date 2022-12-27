@@ -1,14 +1,16 @@
-import { useState, useContext } from "react";
+import { useContext, useState } from "react";
+import { FiltersContext } from "../contexts/FiltersProvider";
 import { ExMdSearchIcon } from "../assests/Icons";
-import { CoursesContext } from "../contexts/CoursesContext";
 
 function SearchBar() {
+  const { dispatchFilters } = useContext(FiltersContext);
   const [search, setSearch] = useState("");
-  const { dispatchQueries } = useContext(CoursesContext);
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    dispatchQueries({ search: search.toLowerCase() });
+    dispatchFilters({ search });
   };
+
   const handleInputChange = (e) => setSearch(e.target.value);
   return (
     <div className="search-bar-container">

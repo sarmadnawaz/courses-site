@@ -1,24 +1,25 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import { ExMdChevronRIcon, ExMdChevronLIcon } from "../assests/Icons";
+import { FiltersContext } from "../contexts/FiltersProvider";
 import renderPageNumbers from "../utilz/renderPageNumbers";
 
-function Pagination({
-  totalPages = 1,
-  currentPage: activePage = 1,
-  onPageChangehandler = () => {},
-}) {
+function Pagination({ totalPages = 1, currentPage: activePage = 1 }) {
+  const { dispatchFilters } = useContext(FiltersContext);
   const [currentPage, setCurrentPage] = useState(activePage);
 
   const handlePageChange = (pageNumber) => {
     if (pageNumber > totalPages) {
       setCurrentPage(1);
-    } else if (pageNumber <= 1) {
+    } else if (pageNumber < 1) {
       setCurrentPage(totalPages);
-    } else setCurrentPage(pageNumber);
+    } else {
+      setCurrentPage(pageNumber);
+    }
   };
-
   useEffect(() => {
-    onPageChangehandler(currentPage);
+    if (currentPage !== 1) {
+      dispatchFilters({ page: currentPage });
+    }
   }, [currentPage]);
 
   return (

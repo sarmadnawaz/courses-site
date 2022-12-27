@@ -3,6 +3,13 @@
   min-height: 100vh;
   &-main {
     margin-top: $xxxsm-size;
+    min-height: calc(100vh - 8.2rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    .container {
+      width: 100%;
+    }
     .top-nav {
       height: 3.3rem;
       box-sizing: border-box;

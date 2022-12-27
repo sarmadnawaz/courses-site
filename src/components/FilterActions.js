@@ -1,29 +1,23 @@
-import { FilterSelect } from "./FilterSelect";
-import { useContext, useEffect, useReducer } from "react";
+import { useContext, useEffect, useReducer, useRef } from "react";
 import { CategoriesContext } from "../contexts/CategoriesContext";
-import { CoursesContext } from "../contexts/CoursesContext";
+import { FiltersContext } from "../contexts/FiltersProvider";
+import { FilterSelect } from "./FilterSelect";
 
 const reducer = (state, action) => ({ ...state, ...action });
+
 function FilterActions() {
-  const { dispatchQueries } = useContext(CoursesContext);
   const { categories } = useContext(CategoriesContext);
-  const [state, setState] = useReducer(reducer, {
-    category: null,
-    topic: null,
-    language: null,
-    sortby: null,
-  });
+  const { dispatchFilters } = useContext(FiltersContext);
+
+  const [queries, dispatchQueries] = useReducer(reducer, {});
+
   const handleChange = (e) => {
-    setState({ [e.target.name]: e.target.value });
+    dispatchQueries({ [e.target.name]: e.target.value });
   };
+
   useEffect(() => {
-    dispatchQueries({
-      category: state.category,
-      topic: state.topic,
-      language: state.language,
-      sortby: state.sortby,
-    });
-  }, [state]);
+    dispatchFilters(queries);
+  }, [queries, dispatchFilters]);
 
   return (
     <div className="filter-container">

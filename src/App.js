@@ -7,14 +7,15 @@ import { Course } from "./pages/Course";
 import { UnAuthenticatedHeader } from "./components/UnAuthenticatedHeader";
 import { CoursesProvider } from "./contexts/CoursesContext";
 import { CategoriesProvider } from "./contexts/CategoriesContext";
+import { RoutingProvider } from "./routing/RouterProvider";
 
 function App() {
   return (
     <div className="app">
       <CategoriesProvider>
-      <CoursesProvider>
-        <Explore />
-      </CoursesProvider>
+        <CoursesProvider>
+          <RoutingProvider />
+        </CoursesProvider>
       </CategoriesProvider>
       {/* <Course /> */}
       {/* <UnAuthenticatedHeader /> */}

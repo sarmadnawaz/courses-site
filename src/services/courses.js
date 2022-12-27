@@ -1,4 +1,4 @@
-export const getCourses = async (queries) => {
+export const getCourses = async (queries = {}) => {
   try {
     let queriesArr = [];
     Object.keys(queries).forEach((query) => {
