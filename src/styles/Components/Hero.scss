@@ -1,6 +1,7 @@
 .hero-section {
+  background-color: $dark-gray;
   box-sizing: border-box;
-  height: 100%;
+  min-height: calc(100vh - 9.0rem);
   color: $off-white;
   display: flex;
   align-items: center;

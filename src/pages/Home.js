@@ -9,15 +9,11 @@ import { Header } from "../components/Header";
 export const Home = () => {
   return (
     <main className="home-page-main">
-      <div className="home-page-top-container">
-        <Header />
-        <HeroSection />
-      </div>
-      {/* <DashBoard /> */}
+      <Header />
+      <HeroSection />
       <CategoriesSection />
       <PricingSection />
       <SubscriptionSection />
-      {/* <Footer />  */}
     </main>
   );
 };

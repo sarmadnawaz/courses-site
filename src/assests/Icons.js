@@ -8,7 +8,8 @@ import {
   XMarkIcon,
   MagnifyingGlassIcon,
   ChevronRightIcon,
-  ChevronLeftIcon
+  ChevronLeftIcon,
+  Bars3Icon
 } from "@heroicons/react/24/outline";
 
 
@@ -37,6 +38,10 @@ export const MdBookOpenIcon = ({ style = {}, className = "", ...props }) => (
     style={{ width: "24px", height: "24px", ...style }}
     {...props}
   />
+);
+
+export const ExMdBarsIcon = ({ style = {}, className = "", ...props }) => (
+  <Bars3Icon className={className} style={{ width: "32px", height: "32px", ...style }} {...props} />
 );
 
 export const ExMdPlusIcon = ({ style = {}, className = "", ...props }) => (
