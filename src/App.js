@@ -12,15 +12,15 @@ import { RoutingProvider } from "./routing/RouterProvider";
 function App() {
   return (
     <div className="app">
-      {/* <CategoriesProvider>
+      <CategoriesProvider>
         <CoursesProvider>
           <RoutingProvider />
         </CoursesProvider>
-      </CategoriesProvider> */}
+      </CategoriesProvider>
       {/* <Course /> */}
       {/* <UnAuthenticatedHeader /> */}
       {/* <Header /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <SignIn /> */}
     </div>
   );

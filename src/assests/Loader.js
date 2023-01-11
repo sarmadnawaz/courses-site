@@ -1,5 +1,7 @@
-export function Loader() {
-    return <div className="loader-container">
-        <img src="/images/loader-m.gif" alt="loader" />
+export function Loader({ className }) {
+  return (
+    <div className={`loader-container ${className}`}>
+      <img src="images/offwhite-loader-50 .gif" alt="loader" />
     </div>
+  );
 }

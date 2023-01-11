@@ -1,0 +1,53 @@
+.signup-page {
+  background-color: $dark-gray;
+  padding: $md-size;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container {
+    padding: $md-size;
+    border-radius: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: $medium-gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: $base-size;
+    &-header {
+      grid-column: span 2;
+      display: flex;
+      flex-direction: column;
+      gap: $base-size;
+    }
+  }
+  &-content {
+    grid-column: span 2;
+    display: flex;
+    gap: $base-size;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .signup-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: $md-size;
+    column-gap: $md-size;
+  }
+  &-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  button {
+    align-self: flex-end;
+    height: 4.88rem;
+  }
+  @media (max-width: 700px) {
+    .signup-form {
+      grid-template-columns: 1fr;
+    }
+  }
+}

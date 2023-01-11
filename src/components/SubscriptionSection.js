@@ -1,8 +1,5 @@
-import { Input } from "./Input";
-import { Select } from "./Select";
 import { subscriptionSectionImages } from "../assests/dev-data/images";
-import { plans } from "../assests/dev-data/pricing-plans";
-
+import { SignUpForm } from "./signUpForm";
 function SubscriptionSection() {
   return (
     <div className="subscription-section" id="subscription-section">
@@ -16,14 +13,7 @@ function SubscriptionSection() {
               Sign up now to get free access to 100 courses and 75 books for
               free. You can also subscribe paid plans by now
             </p>
-            <form className="subscription-form">
-              <Input type="text" label="Full Name" />
-              <Input type="text" label="Email" />
-              <Input type="text" label="Password" />
-              <Input type="text" label="Confirm Password" />
-              <Select label="Plans" options={plans} />
-              <button className="btn btn--outline">Sign Up Now</button>
-            </form>
+          <SignUpForm />
           </div>
           <div className="subscription-container-imgs">
             {subscriptionSectionImages.map((img) => (
